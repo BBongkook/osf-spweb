@@ -10,4 +10,8 @@ public class HomeController {
 	public String goHome() {
 		return "index";
 	}
+	@RequestMapping("/test")
+	public String goTest() {
+		return "test";
+	}// 무조건 스트링이여야해
 }
