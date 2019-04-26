@@ -15,14 +15,14 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 @Slf4j
 public class HomeController {
-	@Autowired
+/*	@Autowired
 	@Qualifier("ds")
-	private DataSource ds;
+//	private DataSource ds;
 	
 	@RequestMapping("/")
 	public String goHome() {
 		try {
-			log.info("con=>{}",ds.getConnection());
+			//log.info("con=>{}",ds.getConnection());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -32,7 +32,7 @@ public class HomeController {
 	@RequestMapping("/test")
 	public String goTest(Model model) {
 		try {
-			log.info("con=>{}", ds.getConnection());
+			//log.info("con=>{}", ds.getConnection());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -40,4 +40,4 @@ public class HomeController {
 		model.addAttribute("msg", "hello~");
 		return "test";
 	}// 무조건 스트링이여야해
-}
+*/}
