@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>안녕하세요.</title>
+</head>
+<style>
+label{
+	color:red;
+}
+/*띄는것과 꺽쇄의 차이 꺽쇄는 내 바로 아래 있는 것 띄어쓰기는 내 안에 안에 안에 있는 label 까지*/
+div>label{ 
+	color:blue;
+}
+/* 클래스는 앞에 . 붙으면 된다 */
+.none-java{
+	color:black;
+}
+</style>
+<body>
+<div>
+	<label for="id">아이디 : </label><input type="text" id="id"><br>
+	<label for="pwd" class="none-java">비밀번호 : </label><input type="password" id="pwd"><br>
+	<button>로그인</button>
+	<table>
+		<tr>		
+			<td>
+				<label class="none-java">하하</label>
+			</td>
+		</tr>
+	</table>
+</div>
+<label>아이디와 비밀번호는 필수입니다.</label>
+</body>
+</html>
